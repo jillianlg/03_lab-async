@@ -9,6 +9,4 @@ function copy(src, dst) {
         log(err);
     })
 }
-// copy('./README.md', './copyAFile/chain-copy.txt');
-
 module.exports = { copy };
