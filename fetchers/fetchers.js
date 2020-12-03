@@ -6,8 +6,20 @@ const fetch = require('node-fetch');
 //     console.log(json);
 // }
 
-const fetcher = () => {
-    return fetch('http://futuramaapi.herokuapp.com/api/quotes/1')
+// const fetcherOne = () => {
+//     return fetch('http://futuramaapi.herokuapp.com/api/quotes/1')
+//         .then(res => {
+//         return res.json()
+//     })
+//         .then(json => {
+//         console.log(json);
+//     });
+// }
+
+// fetcherOne();
+
+const fetcherMore = () => {
+    return fetch('http://futuramaapi.herokuapp.com/api/quotes/')
         .then(res => {
         return res.json()
     })
@@ -16,4 +28,6 @@ const fetcher = () => {
     });
 }
 
-fetcher();
+fetcherMore();
+
+
